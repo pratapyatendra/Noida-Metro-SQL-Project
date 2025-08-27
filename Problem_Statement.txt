@@ -1,0 +1,59 @@
+Problem Statement: Noida Metro Ticket Booking System
+=====================================================
+
+Background
+-------------------------------------------------
+The Noida Metro Rail Corporation (NMRC) requires a simplified ticket booking system to manage passengers, stations, and tickets. 
+The system should allow booking tickets using either QR tickets or SmartCards.
+
+-------------------------------------------------
+Requirements
+-------------------------------------------------
+1. Passengers Management
+   - Store passenger details such as name, card_type, and balance.
+   - By default, new passengers should be assigned a QR Ticket type.
+   - Existing passengers may have a SmartCard with a preloaded balance.
+
+2. Stations Management
+   - Maintain a list of stations with unique IDs and names.
+
+3. Ticket Booking
+   - Passengers book tickets from a start station to an end station.
+   - The fare is calculated based on the distance between stations:
+     fare = ABS(end_station_id - start_station_id) * 10
+   - For SmartCard passengers:
+     - Deduct fare from balance.
+     - Booking fails if balance is insufficient.
+   - For QR Ticket passengers:
+     - Fare is charged but not deducted from balance (pay per ride).
+
+4. Booking Record
+   - Store every booking in the ticket table with:
+     - Ticket ID
+     - Passenger ID
+     - Start & End station
+     - Fare
+     - Journey date & time
+
+-------------------------------------------------
+Expected Deliverables
+-------------------------------------------------
+- SQL scripts to create tables, sequences, and sample data.
+- PL/SQL procedure ticket_booking_system to handle bookings.
+- Proper exception handling (e.g., invalid station names, insufficient balance).
+- GitHub repository with:
+  - README.txt (documentation)
+  - Problem_Statement.txt (this file)
+  - .sql script files for schema and procedures
+
+-------------------------------------------------
+Success Criteria
+-------------------------------------------------
+- A user can book a ticket by simply entering:
+  - Passenger Name
+  - Start Station Name
+  - End Station Name
+- System automatically:
+  - Creates passenger (if new) with default QR card.
+  - Calculates and displays fare.
+  - Stores ticket booking in the database.
