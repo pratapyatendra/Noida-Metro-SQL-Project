@@ -1,5 +1,5 @@
 Noida Metro Ticket Booking System (SQL & PL/SQL)
-=================================================
+==================================================
 
 This project is a mini database management system developed in Oracle SQL Developer to simulate a Noida Metro Ticket Booking System.
 It demonstrates real-time SQL & PL/SQL concepts such as:
