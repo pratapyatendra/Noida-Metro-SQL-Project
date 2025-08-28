@@ -74,7 +74,7 @@ INSERT INTO metro_lines (line_id, line_name, color) VALUES (7, 'Pink Line', 'Pin
 INSERT INTO metro_lines (line_id, line_name, color) VALUES (8, 'Grey Line', 'Grey');
 INSERT INTO metro_lines (line_id, line_name, color) VALUES (9, 'Airport Express Line', 'Orange');
 INSERT INTO metro_lines (line_id, line_name, color) VALUES (10, 'Aqua Line', 'Aqua');
-INSERT INTO metro_lines (line_id, line_name, color) VALUES (11, 'Rapid Metro Gurugram', '—');
+INSERT INTO metro_lines (line_id, line_name, color) VALUES (11, 'Rapid Metro Gurugram', 'â€”');
 
 select * from metro_lines order by line_id;
 
