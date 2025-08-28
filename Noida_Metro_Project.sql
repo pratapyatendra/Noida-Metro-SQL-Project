@@ -1,5 +1,5 @@
 
--- Noida Metro Ticket Booking System SQL Script
+-- Noida Metro Ticket Booking System SQL Scripts
 
 -- Drop existing tables (for reset purposes)
 DROP TABLE ticket CASCADE CONSTRAINTS;
